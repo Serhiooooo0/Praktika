@@ -1,3 +1,4 @@
+// 01.04.2024 Челогузов Сергей Дмитриевич
 package com.example.session_1_cheliva;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ public class MainActivity2 extends AppCompatActivity {
         setContentView(R.layout.activity_main2);
     }
 
+    // метод для перехода на следующий активити для кнопки
     public void Skip2(View v){
         Intent intent = new Intent(this, MainActivity4.class);
         startActivity(intent);
