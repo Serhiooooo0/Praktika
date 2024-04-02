@@ -16,11 +16,11 @@ public class MainActivity4 extends AppCompatActivity {
     }
     // метод для перехода на следующий активити для кнопки
     public void SignUp4(View v){
-        Intent intent = new Intent(this, Holder.class);
+        Intent intent = new Intent(this, MainActivity5.class);
         startActivity(intent);
     }
     public void Signin4(View v){
-        Intent intent = new Intent(this, Holder.class);
+        Intent intent = new Intent(this, MainActivity5.class);
         startActivity(intent);
     }
 }
