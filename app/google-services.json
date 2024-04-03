@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "856626772380",
+    "project_id": "appa-e0ab4",
+    "storage_bucket": "appa-e0ab4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856626772380:android:8aa95fecbe077193033059",
+        "android_client_info": {
+          "package_name": "com.example.session_1_cheliva"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwKqkSXusPq69JABpuoBgyJCNwLndH4bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

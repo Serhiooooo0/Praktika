@@ -22,7 +22,7 @@ public class MainActivity10 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main8);
+        setContentView(R.layout.activity_main10);
 
         log = findViewById(R.id.buttonlog);
         passText = "";

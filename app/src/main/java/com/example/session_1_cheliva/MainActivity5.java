@@ -29,6 +29,7 @@ public class MainActivity5 extends AppCompatActivity {
     private EditText phone;
     private EditText pass;
     private EditText conf;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -88,7 +89,7 @@ public class MainActivity5 extends AppCompatActivity {
 
 
                 if(fioText.length() != 0 & Patterns.PHONE.matcher(phoneText).matches() & passText.length() != 0 & confText.length() != 0 & passText.equals(confText) == true){
-                    Intent intent = new Intent(MainActivity4.this, MainActivity5.class);
+                    Intent intent = new Intent(MainActivity5.this, MainActivity5.class);
                     startActivity(intent);
                 }
                 if(fioText.length() == 0) {

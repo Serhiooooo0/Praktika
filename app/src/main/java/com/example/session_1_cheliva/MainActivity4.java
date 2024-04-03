@@ -15,12 +15,12 @@ public class MainActivity4 extends AppCompatActivity {
         setContentView(R.layout.activity_main4);
     }
     // метод для перехода на следующий активити для кнопки
-    public void SignUp4(View v){
+    public void SignUp(View v){
         Intent intent = new Intent(this, MainActivity5.class);
         startActivity(intent);
     }
-    public void Signin4(View v){
-        Intent intent = new Intent(this, MainActivity5.class);
+    public void SignIn(View v){
+        Intent intent = new Intent(this, MainActivity6.class);
         startActivity(intent);
     }
 }

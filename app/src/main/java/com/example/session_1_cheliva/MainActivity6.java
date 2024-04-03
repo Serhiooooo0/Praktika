@@ -24,7 +24,7 @@ public class MainActivity6 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main5);
+        setContentView(R.layout.activity_main6);
 
         log = findViewById(R.id.log);
         passText = "";
@@ -81,7 +81,7 @@ public class MainActivity6 extends AppCompatActivity {
     }
 
     public void Forgot(View v){
-        Intent intent = new Intent(this, MainActivity6.class);
+        Intent intent = new Intent(this, MainActivity7.class);
         startActivity(intent);
     }
 

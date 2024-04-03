@@ -83,7 +83,7 @@
                     android:layout_marginTop="20dp"
                     android:text="Sign in"
                     android:textColor="#0560FA"
-                    android:onClick="Signin4"/>
+                    android:onClick="SignIn"/>
             </LinearLayout>
 
         </LinearLayout>
