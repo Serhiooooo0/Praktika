@@ -1,3 +1,4 @@
+// 02.04.2024 Челогузов Сергей Дмитриевич Класс описывает ввод полученного кода для изменения пароля
 package com.example.session_1_cheliva;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,7 +31,7 @@ public class MainActivity8 extends AppCompatActivity {
         return number <= 9 ? "0" + number : String.valueOf(number);
     }
     public void Password(View view){
-        Intent intent = new Intent(this, MainActivity8.class);
+        Intent intent = new Intent(this, MainActivity10.class);
         startActivity(intent);
     }
 }

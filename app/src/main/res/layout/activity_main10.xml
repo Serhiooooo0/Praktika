@@ -63,7 +63,7 @@
                         android:textColor="#A7A7A7"/>
 
                     <EditText
-                        android:id="@+id/editTextTextEmailAddress"
+                        android:id="@+id/editEmailAddress"
                         android:layout_width="342dp"
                         android:layout_height="44dp"
                         android:background="@drawable/okno"
@@ -91,7 +91,7 @@
                         android:textColor="#A7A7A7"/>
 
                     <EditText
-                        android:id="@+id/editTextTextPassword"
+                        android:id="@+id/Parol"
                         android:layout_width="342dp"
                         android:layout_height="44dp"
                         android:background="@drawable/okno"
@@ -106,7 +106,7 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonlog"
                 android:layout_width="342dp"
                 android:layout_height="46dp"
                 android:text="Log in"
