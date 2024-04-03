@@ -192,6 +192,7 @@
                 android:onClick="SignUp"
                 app:cornerRadius="5dp"
                 android:textStyle="bold"
+
                 android:layout_marginTop="50dp"/>
 
             <LinearLayout
