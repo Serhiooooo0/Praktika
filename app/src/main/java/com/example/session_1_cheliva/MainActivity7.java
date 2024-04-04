@@ -63,7 +63,7 @@ public class MainActivity7 extends AppCompatActivity {
         }
     }
     public void SignUp(View v){
-        Intent intent = new Intent(this, MainActivity3.class);
+        Intent intent = new Intent(this, MainActivity6.class);
         startActivity(intent);
     }
 

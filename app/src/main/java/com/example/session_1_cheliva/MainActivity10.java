@@ -4,10 +4,12 @@ package com.example.session_1_cheliva;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity10 extends AppCompatActivity {
@@ -82,6 +84,9 @@ public class MainActivity10 extends AppCompatActivity {
             log.setBackgroundColor(colorG);
         }
     }
-
+    public void LogIn(View view){
+        Intent intent = new Intent(this, MainActivity11.class);
+        startActivity(intent);
+    }
 
 }

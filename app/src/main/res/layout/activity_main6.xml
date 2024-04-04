@@ -148,7 +148,7 @@
                     android:text="Log in"
                     android:textStyle="bold"
                     android:enabled="false"
-                    android:onClick="LogIn_LogIn"
+                    android:onClick="LogIn"
                     app:cornerRadius="4dp"
                     android:backgroundTint="#A7A7A7"/>
 

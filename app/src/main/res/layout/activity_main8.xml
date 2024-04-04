@@ -169,7 +169,7 @@
                         android:layout_height="46dp"
                         android:text="Set New Password"
                         android:textStyle="bold"
-                        android:onClick="SET_SET"
+                        android:onClick="SET"
                         app:cornerRadius="4dp"
                         android:backgroundTint="#A7A7A7"/>
 

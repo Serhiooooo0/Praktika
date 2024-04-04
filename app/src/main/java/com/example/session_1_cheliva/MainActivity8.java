@@ -178,7 +178,7 @@ public class MainActivity8 extends AppCompatActivity {
     public String checkDigit(int number) {
         return number <= 9 ? "0" + number : String.valueOf(number);
     }
-    public void Password(View view){
+    public void SET(View view){
         Intent intent = new Intent(this, MainActivity10.class);
         startActivity(intent);
     }

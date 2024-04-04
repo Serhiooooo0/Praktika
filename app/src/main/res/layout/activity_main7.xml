@@ -89,7 +89,8 @@
                     android:layout_height="46dp"
                     android:text="Send OTP"
                     android:textStyle="bold"
-                    android:onClick="SendOTP_SendOTP"
+                    android:enabled="false"
+                    android:onClick="SendOTP"
                     app:cornerRadius="4dp"
                     android:backgroundTint="#A7A7A7"/>
 
@@ -116,7 +117,7 @@
                         android:textSize="14dp"
                         android:textColor="#0560FA"
                         android:textStyle="bold"
-                        android:onClick="SignUp_LogIn"
+                        android:onClick="SignUp"
                         android:text="Sign Up" />
 
                 </LinearLayout>
