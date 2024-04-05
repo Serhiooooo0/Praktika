@@ -1,4 +1,4 @@
-// 02.04.2024 Челогузов Сергей Дмитриевич Класс описывает создание аккаунта
+//Класс является окном для регистрации сделан 02 04 2024 Челогузов Сергей Дмитриевич
 package com.example.session_1_cheliva;
 
 import androidx.annotation.NonNull;
@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -18,11 +17,15 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
+
+import com.example.session_1_cheliva.MainActivity6;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+
 public class MainActivity5 extends AppCompatActivity {
 
     private AppCompatButton login;
@@ -46,17 +49,17 @@ public class MainActivity5 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main5);
+        mAuth = FirebaseAuth.getInstance();
 
         login = findViewById(R.id.button3);
         fioText = "";
-        emailText = "";
         phoneText = "";
+        emailText = "";
         passText = "";
         confText = "";
 
-
-        fio = findViewById(R.id.editTextText2);
         email = findViewById(R.id.EmailAddres);
+        fio = findViewById(R.id.editTextText2);
         phone = findViewById(R.id.TextPhoned);
         pass = findViewById(R.id.Password);
         conf = findViewById(R.id.Password2);
@@ -90,6 +93,8 @@ public class MainActivity5 extends AppCompatActivity {
             }
         });
 
+
+
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,11 +102,17 @@ public class MainActivity5 extends AppCompatActivity {
                 phoneText = phone.getText().toString();
                 passText = pass.getText().toString();
                 confText = conf.getText().toString();
+                emailText = email.getText().toString();
+
+
 
 
                 if(fioText.length() != 0 & Patterns.PHONE.matcher(phoneText).matches() & passText.length() != 0 & confText.length() != 0 & passText.equals(confText) == true){
-                    Intent intent = new Intent(MainActivity5.this, MainActivity5.class);
-                    startActivity(intent);
+                    createAccount(emailText, passText);
+                    if(user != null) {
+                        Intent intent = new Intent(MainActivity5.this, MainActivity11.class);
+                        startActivity(intent);
+                    }
                 }
                 if(fioText.length() == 0) {
                     fio.setBackground(getDrawable(R.drawable.okno2));
@@ -124,23 +135,41 @@ public class MainActivity5 extends AppCompatActivity {
                     conf.setBackground(getDrawable(R.drawable.okno));
                 }
             }
+
         });
+
+
+
+
     }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            reload();
+        }
+    }
+
     public void Validation(String email, CheckBox view){
         if (Patterns.EMAIL_ADDRESS.matcher(email).matches() & view.isChecked() == true){
             login.setEnabled(true);
-            int colorB = Color.parseColor("#0560FA");
-            login.setBackgroundColor(colorB);
+            login.setBackgroundColor(getColor(R.color.blue));
         } else{
             login.setEnabled(false);
-            int colorG = Color.parseColor("#A7A7A7");
-            login.setBackgroundColor(colorG);
+            login.setBackgroundColor(getColor(R.color.gray));
         }
     }
+
     public void LogIn(View v){
         Intent intent = new Intent(this, MainActivity6.class);
         startActivity(intent);
     }
+
+    private void reload() { }
+
+
 
     public void createAccount(String email, String password){
         mAuth.createUserWithEmailAndPassword(email, password)
@@ -163,4 +192,6 @@ public class MainActivity5 extends AppCompatActivity {
                 });
     }
 
+
 }
+

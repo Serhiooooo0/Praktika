@@ -59,7 +59,7 @@
                 android:textStyle="bold"
                 android:text="Sign Up"
                 app:cornerRadius="5dp"
-                android:onClick="SignUp4"/>
+                android:onClick="SignUp"/>
 
             <LinearLayout
                 android:layout_width="match_parent"

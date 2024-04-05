@@ -145,12 +145,12 @@
                     android:id="@+id/log"
                     android:layout_width="342dp"
                     android:layout_height="46dp"
-                    android:text="Log in"
-                    android:textStyle="bold"
+                    android:backgroundTint="#A7A7A7"
                     android:enabled="false"
                     android:onClick="LogIn"
-                    app:cornerRadius="4dp"
-                    android:backgroundTint="#A7A7A7"/>
+                    android:text="Log in"
+                    android:textStyle="bold"
+                    app:cornerRadius="4dp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -175,7 +175,7 @@
                         android:textSize="14dp"
                         android:textColor="#0560FA"
                         android:textStyle="bold"
-                        android:onClick="SignUp_LogIn"
+                        android:onClick="SignUp"
                         android:text="Sign Up" />
 
                 </LinearLayout>

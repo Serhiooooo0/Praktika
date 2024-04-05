@@ -13,7 +13,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="63dp"
+            android:layout_height="108dp"
             android:backgroundTint="#00FFFFFF"
             app:cardElevation="1dp">
 
@@ -23,10 +23,21 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:gravity="center"
+                android:layout_marginTop="28dp"
                 android:textColor="#A7A7A7"
                 android:textSize="16dp"
                 android:textStyle="bold"
                 android:text="Profile" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="69dp"
+                android:onClick="Back"
+                android:background="@drawable/button_back_blue"
+                android:src="@drawable/back" />
 
         </androidx.cardview.widget.CardView>
 
@@ -137,7 +148,7 @@
                         android:layout_width="342dp"
                         android:layout_height="62dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/background_shadow_butt"
+                        android:background="@drawable/bmenu"
                         android:onClick="Edit_profile"
                         android:orientation="horizontal">
 
@@ -197,7 +208,7 @@
                         android:layout_width="342dp"
                         android:layout_height="62dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/background_shadow_butt"
+                        android:background="@drawable/bmenu"
                         android:onClick="Statements"
                         android:orientation="horizontal">
 
@@ -255,7 +266,7 @@
                         android:layout_width="342dp"
                         android:layout_height="62dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/background_shadow_butt"
+                        android:background="@drawable/bmenu"
                         android:onClick="Notification"
                         android:orientation="horizontal">
 
@@ -313,8 +324,8 @@
                         android:layout_width="342dp"
                         android:layout_height="62dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/background_shadow_butt"
-                        android:onClick="Card"
+                        android:background="@drawable/bmenu"
+                        android:onClick="AddPay"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -346,7 +357,7 @@
                                 android:id="@+id/textView27"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:text="Name, phone no, address, email ..."
+                                android:text="change cards, delete card details"
                                 android:textColor="#A7A7A7"
                                 android:textSize="12dp" />
                         </LinearLayout>
@@ -371,7 +382,7 @@
                         android:layout_width="342dp"
                         android:layout_height="62dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/background_shadow_butt"
+                        android:background="@drawable/bmenu"
                         android:onClick="Referrals"
                         android:orientation="horizontal">
 
@@ -429,7 +440,7 @@
                         android:layout_width="342dp"
                         android:layout_height="62dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/background_shadow_butt"
+                        android:background="@drawable/bmenu"
                         android:onClick="About"
                         android:orientation="horizontal">
 
@@ -489,7 +500,7 @@
                         android:layout_width="342dp"
                         android:layout_height="62dp"
                         android:layout_gravity="center"
-                        android:background="@drawable/ic_launcher_background.xm"
+                        android:background="@drawable/bmenu"
                         android:onClick="LogOut"
                         android:orientation="horizontal">
 
@@ -541,6 +552,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="Home"
                     android:backgroundTint="#00FFFFFF"
                     android:src="@drawable/houseg" />
 
@@ -573,7 +585,5 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
     </LinearLayout>
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

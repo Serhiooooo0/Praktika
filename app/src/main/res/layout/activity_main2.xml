@@ -56,17 +56,17 @@
 
                 <Button
                     android:id="@+id/button"
-                    android:layout_width="100dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:layout_marginRight="142dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/white"
+                    android:onClick="Skip2"
                     android:text="Skip"
                     android:textColor="#0560FA"
                     app:cornerRadius="5dp"
                     app:strokeColor="#0560FA"
-                    app:strokeWidth="1dp"
-                    android:onClick="Skip2"/>
+                    app:strokeWidth="1dp" />
 
                 <Button
                     android:id="@+id/button2"
